@@ -78,6 +78,7 @@ else
     echo "⚠️  Custom template not found, skipping..."
 fi
 
+
 # Installation complete
 echo
 echo "🎉 Installation completed successfully!"

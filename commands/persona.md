@@ -29,7 +29,24 @@ When you use `/persona clear`, I will:
 
 ## Implementation
 
-$1
+**If no argument provided:**
+📋 **Available Personas**
+
+$(for f in ~/.claude/personas/*.md; do
+  if [ -f "$f" ]; then
+    name=$(basename "$f" .md)
+    # Skip examples directory and other utility files
+    if [ "$name" != "examples" ] && [ "$name" != "list" ]; then
+      echo "- \`/persona $name\` - Switch to $name"
+    fi
+  fi
+done)
+
+- `/persona clear` - Return to standard Claude mode
+
+**Current Status:** Standard Claude mode
+
+To create custom personas, see `examples/custom-persona-template.md`
 
 **If argument is "clear":**
 🔄 **Persona Cleared**
@@ -47,26 +64,17 @@ Let me load the $1 persona for you.
 The persona "$1" was not found in `~/.claude/personas/$1.md`.
 
 **Available personas:**
-- developer
-- architect  
-- reviewer
-- consultant
+$(for f in ~/.claude/personas/*.md; do
+  if [ -f "$f" ]; then
+    name=$(basename "$f" .md)
+    # Skip examples directory and other utility files
+    if [ "$name" != "examples" ] && [ "$name" != "list" ]; then
+      echo "- $name"
+    fi
+  fi
+done)
 
 **To create a custom persona:**
 1. Create a new `.md` file in `~/.claude/personas/`
 2. Use the template from `examples/custom-persona-template.md`
 3. Then use `/persona [your-persona-name]` to activate it
-
-**If no argument provided:**
-📋 **Claude Persona Switcher**
-
-**Usage:**
-- `/persona developer` - Switch to developer persona
-- `/persona architect` - Switch to architect persona  
-- `/persona reviewer` - Switch to code reviewer persona
-- `/persona consultant` - Switch to technical consultant persona
-- `/persona clear` - Return to standard Claude mode
-
-**Current Status:** Standard Claude mode
-
-To create custom personas, see `examples/custom-persona-template.md`

@@ -100,6 +100,12 @@ cd claude-persona-switch
    /persona my-persona
    ```
 
+4. **Restart Claude Code** (if needed):
+   ```bash
+   # If your new persona doesn't appear in the list, restart Claude Code
+   # This ensures the command cache is refreshed
+   ```
+
 ### Custom Persona Structure
 
 ```markdown

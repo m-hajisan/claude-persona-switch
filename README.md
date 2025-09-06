@@ -20,13 +20,13 @@ Claude Persona Switch is a custom slash command system for [Claude Code](https:/
 ## 🚀 Quick Install
 
 ```bash
-curl -sSL https://raw.githubusercontent.com/[username]/claude-persona-switch/main/install.sh | bash
+curl -sSL https://raw.githubusercontent.com/m-hajisan/claude-persona-switch/main/install.sh | bash
 ```
 
 ### Manual Installation
 
 ```bash
-git clone https://github.com/[username]/claude-persona-switch.git
+git clone https://github.com/m-hajisan/claude-persona-switch.git
 cd claude-persona-switch
 ./install.sh
 ```
@@ -192,7 +192,7 @@ cp ~/.claude/personas/my-team-persona.md .claude/personas/
 ## 🚮 Uninstallation
 
 ```bash
-curl -sSL https://raw.githubusercontent.com/[username]/claude-persona-switch/main/uninstall.sh | bash
+curl -sSL https://raw.githubusercontent.com/m-hajisan/claude-persona-switch/main/uninstall.sh | bash
 ```
 
 The uninstaller preserves any custom personas you've created.
@@ -209,7 +209,7 @@ We welcome contributions! Here are ways you can help:
 ### Development Setup
 
 ```bash
-git clone https://github.com/[username]/claude-persona-switch.git
+git clone https://github.com/m-hajisan/claude-persona-switch.git
 cd claude-persona-switch
 
 # Test installation locally
@@ -227,13 +227,14 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 - Built for the [Claude Code](https://claude.ai/code) community
 - Inspired by the growing ecosystem of Claude Code custom commands
+- Maintained by [IT Komons Inc.](https://it-komons.jp)
 - Thanks to all contributors and persona creators
 
 ## 📞 Support
 
-- **Issues**: [GitHub Issues](https://github.com/[username]/claude-persona-switch/issues)
-- **Discussions**: [GitHub Discussions](https://github.com/[username]/claude-persona-switch/discussions)
-- **Documentation**: [Project Wiki](https://github.com/[username]/claude-persona-switch/wiki)
+- **Issues**: [GitHub Issues](https://github.com/m-hajisan/claude-persona-switch/issues)
+- **Discussions**: [GitHub Discussions](https://github.com/m-hajisan/claude-persona-switch/discussions)
+- **Documentation**: [Project Wiki](https://github.com/m-hajisan/claude-persona-switch/wiki)
 
 ---
 

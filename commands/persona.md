@@ -32,16 +32,10 @@ When you use `/persona clear`, I will:
 **If no argument provided:**
 📋 **Available Personas**
 
-$(for f in ~/.claude/personas/*.md; do
-  if [ -f "$f" ]; then
-    name=$(basename "$f" .md)
-    # Skip examples directory and other utility files
-    if [ "$name" != "examples" ] && [ "$name" != "list" ]; then
-      echo "- \`/persona $name\` - Switch to $name"
-    fi
-  fi
-done)
+$(find ~/.claude/personas -name "*.md" -type f -exec basename {} .md \; | grep -v "custom-persona-template" | sort | sed 's/^/- /')
 
+
+- `/persona [your-persona-name]` - Switch to specified persona
 - `/persona clear` - Return to standard Claude mode
 
 **Current Status:** Standard Claude mode
@@ -64,15 +58,7 @@ Let me load the $1 persona for you.
 The persona "$1" was not found in `~/.claude/personas/$1.md`.
 
 **Available personas:**
-$(for f in ~/.claude/personas/*.md; do
-  if [ -f "$f" ]; then
-    name=$(basename "$f" .md)
-    # Skip examples directory and other utility files
-    if [ "$name" != "examples" ] && [ "$name" != "list" ]; then
-      echo "- $name"
-    fi
-  fi
-done)
+$(find ~/.claude/personas -name "*.md" -type f -exec basename {} .md \; | grep -v "custom-persona-template" | sort | sed 's/^/- /')
 
 **To create a custom persona:**
 1. Create a new `.md` file in `~/.claude/personas/`

@@ -98,6 +98,6 @@ echo "  3. Save as ~/.claude/personas/your-persona-name.md"
 echo "  4. Use /persona your-persona-name to activate"
 echo
 echo "📂 Configuration directory: ~/.claude/personas/"
-echo "🔗 GitHub: https://github.com/[username]/claude-persona-switch"
+echo "🔗 GitHub: https://github.com/m-hajisan/claude-persona-switch"
 echo
 echo "Happy coding with your new personas! 🚀"

@@ -96,6 +96,6 @@ if [ "$remaining_files" -gt 0 ]; then
     echo "   You can reinstall Claude Persona Switch anytime and they'll still be available."
 fi
 echo
-echo "To reinstall: curl -sSL https://raw.githubusercontent.com/[username]/claude-persona-switch/main/install.sh | bash"
+echo "To reinstall: curl -sSL https://raw.githubusercontent.com/m-hajisan/claude-persona-switch/main/install.sh | bash"
 echo
 echo "Thanks for using Claude Persona Switch! 👋"

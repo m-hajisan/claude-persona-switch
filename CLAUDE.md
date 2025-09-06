@@ -49,7 +49,7 @@ Claude Persona Switch is a custom slash command system for Claude Code that allo
 ### Installation
 ```bash
 # Quick install
-curl -sSL https://raw.githubusercontent.com/[username]/claude-persona-switch/main/install.sh | bash
+curl -sSL https://raw.githubusercontent.com/m-hajisan/claude-persona-switch/main/install.sh | bash
 
 # Manual install
 ./install.sh
